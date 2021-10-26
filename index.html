@@ -10,7 +10,18 @@
   </head>
   <body>
     <div id="app">
-      <h1>{{product}}</h1>
+      <div class="product-display">
+        <div class="product-container">
+          <div class="product-image">
+            <!-- v-bind Dynamically bind an attribute to an expression, 
+            v-bind Shorthand - :-->
+            <img :src="image">
+          </div>
+          <div class="product-info">
+            <h1>{{product}}</h1>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Import App -->
